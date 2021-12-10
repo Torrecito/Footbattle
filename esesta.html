@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<style type="text/css">
+		
+			.contenedortodo{ 
+	
+				width: 99%;
+				height: 200%; 
+				position: absolute;
+				background-color: #94FC17 ;
+                
+			}
+		
+			
+			
+			.header{
+				position: absolute;
+				left:50%; top: 5%;
+				transform: translate(-50%,-55.5%);
+				width: 59%;
+				height: 7%; 						
+				border:1px;			
+				border-radius: 10px;
+				background-color: #green;
+				z-index: 2;				
+			}
+	
+			.principal{
+				position:absolute;
+				left:50%; top: 25%;
+				transform: translate(0.7%,-19%);
+				width: 99%; min-width: 700px;
+				height: 78%; min-height:370px;
+				left: auto;
+				right: auto;
+				border-radius: 10px;
+				background-color: #blue;
+				opacity: 1.1;
+				vertical-align: middle;
+				z-index: 1;
+			}
+
+		
+
+		</style>
+	</head>	
+<body>
+<div class="contenedortodo">
+<div class="header"><FONT color="#D6087B"><marquee><b><h3>Pedidos de ensaladas "FITTEN"</b></h3></marquee></FONT></div>
+
+
+
+<div class="principal">
+	<form>
+	<label>E-mail: </label>
+	<input type="email" name="email" placeholder="Email">
+	<br><br>
+	<label for="password" >Password: </label>
+	<input type="text" name="pass">
+	<br><br>
+	<button style= "background-color: #B2A695">Registrarse</button>
+	<br><br>
+	<p> Escoger forma de pago</p>
+	<select name="listado" value="talla"></br>
+		<option value="Efectivo" selected>Pago con efectivo </option>
+		<option value="trans" selected> Transferencia</option>
+		<option value="credito" selected>Tarjeta de credito</option>
+		<option value="tarjetafit" selected>Tarjeta FITTEN</option>
+	</select>
+	<br><br>
+	<br><br>
+	<center>
+	<h3>Con:</h3>
+	<input type="checkbox" name="Lechuga" value="on" checked>Con lechuga<br>
+	<input type="checkbox" name="Pollo" value="on">Pechuga de pollo<br>
+	<input type="checkbox" name="Vegetariana" value="on">Mix<br>
+	<input type="checkbox" name="Con" value="on">Con carne<br>
+	<br><br>
+	<h3>Proporci&oacute;n</h3>
+	<input type="radio" name= "subject" value="A">Chico</br>
+	<input type="radio" name= "subject" value="verano">Mediana</br>
+	<input type="radio" name= "subject" value="frio">Grande</br>
+	<input type="radio" name= "subject" value="prim">Familiar</br>
+	<input type="radio" name= "subject" value="invierno">Especial oficina</br>
+	<br><br>
+
+</center>
+	<label>Comentarios/quejas</label>
+	
+	<br>
+	<textarea rows="5" cols="50" name="com/quejas">Escriba preferencias de la ensalada
+	</textarea>
+	<br><br>
+	
+<button style= "background-color: #72F5F5">Borrar datos</button>	
+<button style= "background-color: #72F5F5">OK</button>
+<button style= "background-color: brown">Registrarse</button>
+</style>
+</head>	
+</form>
+</body>
+</html>
